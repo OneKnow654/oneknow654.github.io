@@ -1,0 +1,75 @@
+/* style.css */
+
+/* 1. Ensure padding and borders are included in element’s total width/height */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Base styles */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+
+/* 3. Centered, responsive container */
+.box {
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 2px #00f0ff;
+  padding: 1.5rem;
+  width: 90%;           /* fluid width */
+  max-width: 400px;     /* stops growing too wide on large screens */
+  margin: 2rem auto;    /* vertical spacing + centered */
+  text-align: center;
+}
+
+/* 4. Full-width inputs */
+input[type="text"],
+input[type="button"] {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* 5. Text input specific tweaks */
+input[type="text"] {
+  margin-bottom: 1rem;
+  outline: none;
+}
+
+/* 6. Button styling */
+input[type="button"] {
+  background-color: #00f0ff;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+input[type="button"]:hover {
+  background-color: #00cfe3;
+}
+
+#alert{
+    color: red;
+    font-size: 1.3rem;
+}
+
+/* 7. Optional: touch-friendly adjustments on very small screens */
+@media (max-width: 320px) {
+  .box {
+    padding: 1rem;
+  }
+  input[type="text"],
+  input[type="button"] {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+}
