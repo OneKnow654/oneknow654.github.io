@@ -1,18 +1,208 @@
-<html>
-  <head>
-    <title>This is Test page</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <center><h1>Welcome To My Page</h1></center>
-    <br>
-    <div class="box">
-        
-        <input type="text" id="name" placeholder="eg: John Doe" required>
-        <input type="button" id="btn" value="submit">
-        <p id="alert"></p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kode Shastra - Creative Coder</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Particle Background -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Kode.Shastra</div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Kode Shastra</h1>
+            <p>Creative Coder & Digital Artist</p>
+            <a href="#about" class="cta-button">Start Journey</a>
+        </div>
+        <div class="avatar">
+            <i class="fas fa-code"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title animate-in">Character Profile</h2>
+        <div class="about-content">
+            <div class="about-card animate-in-left">
+                <div class="skill-icon"><i class="fas fa-user-astronaut"></i></div>
+                <h3>Level 99 Developer</h3>
+                <p><strong>Class:</strong> Full-Stack Wizard</p>
+                <p><strong>Specialty:</strong> Frontend Magic</p>
+                <p><strong>Location:</strong> Digital Realm</p>
+            </div>
+            <div class="about-text animate-in-right">
+                <h3>About the Developer</h3>
+                <p>Welcome to my digital dimension! I'm a passionate creative coder who transforms ideas into immersive web experiences. With over 5 years of experience in the development realm, I specialize in crafting beautiful, functional, and user-centric applications.</p>
+                <p>My journey began with curiosity about how websites work, and evolved into a deep passion for creating digital experiences that blend aesthetics with functionality. I believe in the power of clean code, innovative design, and continuous learning.</p>
+                <p>When I'm not coding, you'll find me exploring new technologies, playing indie games for inspiration, or sketching UI concepts that push the boundaries of conventional design.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="section-title animate-in">Ability Cards</h2>
+        <div class="skills-grid">
+            <div class="skill-card animate-in">
+                <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+                <div class="skill-name">JavaScript</div>
+                <div class="skill-level">
+                    <div class="skill-progress" data-width="95"></div>
+                </div>
+            </div>
+            <div class="skill-card animate-in">
+                <div class="skill-icon"><i class="fab fa-react"></i></div>
+                <div class="skill-name">React</div>
+                <div class="skill-level">
+                    <div class="skill-progress" data-width="90"></div>
+                </div>
+            </div>
+            <div class="skill-card animate-in">
+                <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                <div class="skill-name">CSS3</div>
+                <div class="skill-level">
+                    <div class="skill-progress" data-width="95"></div>
+                </div>
+            </div>
+            <div class="skill-card animate-in">
+                <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                <div class="skill-name">Node.js</div>
+                <div class="skill-level">
+                    <div class="skill-progress" data-width="85"></div>
+                </div>
+            </div>
+            <div class="skill-card animate-in">
+                <div class="skill-icon"><i class="fas fa-database"></i></div>
+                <div class="skill-name">Databases</div>
+                <div class="skill-level">
+                    <div class="skill-progress" data-width="80"></div>
+                </div>
+            </div>
+            <div class="skill-card animate-in">
+                <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
+                <div class="skill-name">Responsive Design</div>
+                <div class="skill-level">
+                    <div class="skill-progress" data-width="92"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title animate-in">Quest Portfolio</h2>
+        <div class="projects-grid">
+            <div class="project-card animate-in">
+                <div class="project-image">
+                    <i class="fas fa-gamepad"></i>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Neon Arcade</h3>
+                    <p class="project-description">Interactive retro gaming platform with WebGL animations and real-time multiplayer features.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Three.js</span>
+                        <span class="tech-tag">WebGL</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card animate-in">
+                <div class="project-image">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Data Visualization Suite</h3>
+                    <p class="project-description">Advanced dashboard for real-time data analytics with custom D3.js visualizations.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">D3.js</span>
+                        <span class="tech-tag">Vue.js</span>
+                        <span class="tech-tag">Node.js</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card animate-in">
+                <div class="project-image">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Cyber Commerce</h3>
+                    <p class="project-description">Futuristic e-commerce platform with AI-powered recommendations and AR product previews.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Next.js</span>
+                        <span class="tech-tag">WebAR</span>
+                        <span class="tech-tag">MongoDB</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card animate-in">
+                <div class="project-image">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">AI Art Generator</h3>
+                    <p class="project-description">Machine learning powered creative tool for generating unique digital artwork and animations.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">Canvas API</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title animate-in">Message Terminal</h2>
+        <form class="contact-form animate-in" id="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Project Details</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">
+                <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+        </form>
+    </section>
+
+    <!-- Audio Control -->
+    <div class="audio-control" id="audio-control">
+        <i class="fas fa-volume-up" id="audio-icon"></i>
     </div>
-  </body>
-  <script src="script.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <!-- Hidden Audio Element -->
+    <audio id="background-audio" loop>
+        <source src="data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoGAACBhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2/LDciUFLIHO8tiJNwgZaLvt559NEAxQp+PwtmMcBjiR1/LMeSwFJHfH8N2QQAoUXrTp66hVFApGn+DyvmgfBSuR3fPVdCUESHXN9N2NRAwR" type="audio/wav">
+    </audio>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
 </html>
